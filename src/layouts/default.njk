@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+	<!-- Recommended -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Meta -->
+	<meta name="description" content="{{ description if description else 'Nederlands Kampioenschap Flunkybal' }}" />
+	<meta name="generator" content="{{ eleventy.generator }}" />
+
+	<!-- Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+	<link rel="manifest" href="/img/icons/site.webmanifest">
+	<link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#9e7e0f">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<meta name="msapplication-TileColor" content="#fbfb7f">
+	<meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+	<meta name="theme-color" content="#fbfb7f">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NW8LGN9PR"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-4NW8LGN9PR');
+	</script>
+
+	<title>{{ title }}</title>
+
+	<link rel="stylesheet" href="{{ '/site.css' | url }}" />
+</head>
+
+<body class="font-sans leading-normal tracking-normal flex justify-center items-center text-gray-900">
+
+	<div class="max-screeb-w-sm p-8 bg-white rounded-lg shadow-md">
+
+		<!-- Navbar -->
+		{% include "includes/navigation.njk" %}
+
+		<main class="prose">
+			{{ content | safe }}
+		</main>
+	</div>
+
+</body>
+
+</html>

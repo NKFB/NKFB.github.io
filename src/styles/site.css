@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+	background-image: url('/img/NIX18_pms_klein.png');
+	background-repeat: repeat;
+	@apply bg-yellow-100;
+	animation: mov 10s linear infinite;
+}
+
+@keyframes mov {
+	100% {background-position: 352px -110px;}
+}
