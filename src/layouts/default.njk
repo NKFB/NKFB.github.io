@@ -22,6 +22,13 @@
 	<meta name="msapplication-config" content="/img/icons/browserconfig.xml">
 	<meta name="theme-color" content="#fbfb7f">
 
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:description" content="{{ description if description else 'Nederlands Kampioenschap Flunkybal' }}" />
+	<meta property="og:image" content="/img/og-image.jpg" />
+	<meta property="og:url" content="{{ 'https://nkfb.nl' + page.url }}" />
+	<meta name="twitter:card" content="summary_large_image" />
+
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NW8LGN9PR"></script>
 	<script>
