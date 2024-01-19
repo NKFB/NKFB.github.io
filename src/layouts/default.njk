@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Meta -->
-	<meta name="description" content="{{ description if description else 'Nederlands Kampioenschap Flunkybal' }}" />
+	<meta name="description" content="{{ description if description else site.description }}" />
 	<meta name="generator" content="{{ eleventy.generator }}" />
 
 	<!-- Icons -->
@@ -24,9 +24,9 @@
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="{{ title }}" />
-	<meta property="og:description" content="{{ description if description else 'Nederlands Kampioenschap Flunkybal' }}" />
-	<meta property="og:image" content="/img/og-image.jpg" />
-	<meta property="og:url" content="{{ 'https://nkfb.nl' + page.url }}" />
+	<meta property="og:description" content="{{ description if description else site.description }}" />
+	<meta property="og:image" content="{{ site.url }}/img/og-image.jpg" />
+	<meta property="og:url" content="{{ site.url + page.url }}" />
 	<meta name="twitter:card" content="summary_large_image" />
 
 	<!-- Google tag (gtag.js) -->
