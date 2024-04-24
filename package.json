@@ -22,7 +22,7 @@
 	"author": "Voortrekkers",
 	"license": "UNLICENSED",
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0-alpha.4",
+		"@11ty/eleventy": "^3.0.0-alpha.7",
 		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.17",
 		"cross-env": "^7.0.3",
